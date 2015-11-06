@@ -13,3 +13,98 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(https://fonts.googleapis.com/css?family=Sansita+One);
+@import url(https://fonts.googleapis.com/css?family=Sansita+One|Sanchez);
+
+.navbar 
+{
+	padding-top: 3.5%;
+}
+
+.navbar a
+{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 16.5px;
+	color: #00f;
+	margin-bottom: 1%;
+}
+.navbar 
+{
+	background-color: #DFD;
+}
+
+.navbar ul li:nth-child(1)
+{
+	margin-right: 7.5%;
+}
+ul li a:hover
+{
+	font-weight: 1800;
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+}
+.title_h1 h1
+{
+	text-align: center;
+	font-family: 'Sansita One', cursive;
+	color: #002D00;
+}
+.body_container
+{
+	max-width: 600px;
+
+}
+.status ul 
+{
+	margin-left: -5%;
+	padding-top: 15px;
+}
+strong
+{
+	font-family: 'Sansita One', cursive;
+	font-size: 20px;
+	color: #006300;
+}
+.status
+{
+	border-bottom: solid 1px #CCC;
+	padding: 5px 0;
+}
+.status .admin
+{
+	display: none;
+}
+.status.hover .admin
+{
+	display: inline;
+	
+}
+.status.hover
+{
+	background-color: #E5FFE5;
+	margin-left: -25px;
+}
+.btn-info
+{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 16.5px;
+	color: #00f;
+	margin-bottom: 1%;
+}
+.btn-info.hover
+{
+	background-color: white;
+}
+.title_h1 .btn-info a:hover
+{
+	font-weight: 1800;
+	color: black;
+	text-decoration: none;
+	background-color: transparent;
+}

@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-static-top bs-docs-nav">
+		<div class="container">
+			<ul class="navbar">
+				<li class="btn btn-success"><a href="#">Tweet Book</a></li> 
+				<li class="btn btn-success"><%= link_to "All Statuses", statuses_path %></li>
 
-<%= yield %>
+		</div>
+	</div>
+	<div class="container">
+		<p class="notice"><%= notice %></p>
+	    <p class="alert"><%= alert %></p>
+
+		<%= yield %>
+	</div>
 
 </body>
 </html>

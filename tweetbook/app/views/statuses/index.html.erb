@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<div class="title_h1 page-header">
+  <h1>All Statuses</h1>
+<div class="btn btn-info">
+  <%= link_to "New Status",  new_status_path %>
+</div>
+</div>
+
+<% @statuses.each do |status| %>
+<div class="status">
+  <strong><%= status.name %></strong>
+  <p><%= status.content %></p>
+  <div class="meta">
+    <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
+  <span class="admin">
+    <ul>
+      <li class="btn btn-warning"><%= link_to "Edit", edit_status_path(status) %>
+      </li>
+      <li class="btn btn-danger"><%= link_to "Delete", status, method: :delete, data: { confrim: "Are you Sure you want to Delete this Status?" } %>
+      </li>
+    </ul>
+  </span>
+  </div>
+</div>
+<% end %>
