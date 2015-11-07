@@ -108,3 +108,15 @@ strong
 	text-decoration: none;
 	background-color: transparent;
 }
+.form-actions
+{
+	background-color: #AEAEAE;
+	min-width: 100%;
+	min-height: 50px;
+
+}
+.form-actions .form_btn
+{
+	padding-top: 7px;
+	padding-left: 13px;
+}
